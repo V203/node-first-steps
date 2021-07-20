@@ -1,5 +1,5 @@
-// const greet = require('./greet');
-// console.log(greet('xola'))
+
+
 const figlet = require("figlet")
 
 const chalk = require("chalk");
@@ -7,14 +7,15 @@ const chalk = require("chalk");
 
 const greet = require('./greet');
 
+
+
 const styledMessage = chalk.bgGreen.black(greet("xola"));
 
 console.log(styledMessage)
-figlet.text(greet("xola"), {
+figlet.text(styledMessage, {
     font: 'Ghost',
     horizontalLayout: 'default',
-    verticalLayout: 'default',
-    width: 80,
+    width: 50,
     whitespaceBreak: true
 }, function(err, data) {
     if (err) {
